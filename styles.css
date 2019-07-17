@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .somethinNew{
   display: flex;
   background-image: url("http://julieskitchen.me/wp-content/uploads/2013/12/25d49a945c4a11e3ad2a120ba9972426_8.jpg");
@@ -16,4 +17,14 @@
   height: 500px;
   width: 100%;
   margin: 0;
+=======
+.titleTabs{
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  list-style-type: none;
+  margin: 5px;
+  padding: 10px;
+>>>>>>> 977b971c1637c8d120476c21e30371620d21b575
 }

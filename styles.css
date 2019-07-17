@@ -1,5 +1,9 @@
-li{
-list-style-type: none;
-margin: 0;
-padding: 0;
+.titleTabs{
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  list-style-type: none;
+  margin: 5px;
+  padding: 10px;
 }

@@ -1,3 +1,8 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
 .mainTitle{
   display: flex;
   background-color: black;
@@ -31,11 +36,15 @@
 }
 
 .newBtn{
-  height: 800px;
-  width: 300px;
+  height: 50px;
+  width: 250px;
+  border: 1px black;
+  border-radius: 60px;
+  font-size: 20px;
+  font-family: 'DM Serif Display', serif;
 }
 
-.featured {
+.featured{
   display: flex;
   background-image: url("https://assets.bonappetit.com/photos/5cfa7e1fdf8e95e1e62ca6a3/16:9/w_1280%2Cc_limit/Basically-Strawberry-Shortcake-Strawberries.jpg");
   background-repeat: no-repeat;
@@ -55,13 +64,29 @@
 }
 
 .featuredBtn{
-  height:100px;
-  width: 300px;
+  height: 50px;
+  width: 250px;
+  margin-bottom: 100px;
+  border: 1px black;
+  border-radius: 60px;
+  font-size: 19px;
+  font-family: 'DM Serif Display', serif;
 }
 
-.featuredDescrip{
+.featuredRec{
   color: #fffff0;
   font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.featuredDes{
+  color: #fffff0;
+  font-family: 'DM Serif Display', serif;
+  width: 500px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .featuredTitle{
@@ -69,6 +94,29 @@
   font-family: 'DM Serif Display', serif;
   font-size: 60px;
   margin: 0;
+  margin-bottom: 20px;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  height: 50px;
+  text-align: left;
+  background-color: #fffdd0;
+  flex-direction: row;
+  font-family: 'DM Serif Display', serif;
+}
+
+.foot{
+  display: flex;
+  color:#666;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 10px;
+  align-items: center;
 }
 
 .titleTabs{

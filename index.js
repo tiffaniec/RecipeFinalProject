@@ -122,19 +122,15 @@ function clearInputs(){
   $('#stepsInput').val("");
 }
 
-// var featButton=$(".featuredBtn")
-//
-// featButton.on("click", featureRecipe);
-//
-// function featureRecipe(){
-//
-// }
-
-
 var randomBtn=$(".newBtn")
 
 randomBtn.on("click", randomRecipe);
 
-function randomRecipe(){
+var recipeOptions = ["https://www.101cookbooks.com/archives/001191.html", "https://www.loveandlemons.com/tzatziki-sauce/", "https://www.bonappetit.com/recipe/bas-best-hot-fudge", "https://www.bonappetit.com/recipe/thai-tea-ice-cream", "https://www.bonappetit.com/recipe/peach-lassi-sorbet-with-crushed-blackberries", "https://www.loveandlemons.com/homemade-pizza/", "https://www.101cookbooks.com/kale-quinoa-bites/"];
 
+function randomRecipe(){
+  var random = Math.random() * 7;
+  var rounded = Math.floor(random);
+  var recipe = recipeOptions[rounded];
+  window.open(recipe)
 }

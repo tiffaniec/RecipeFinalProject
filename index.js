@@ -1,3 +1,88 @@
+// for yourRecipes page
+var userbtn = $('#userSubmit')
+userbtn.on("click", checkUsername)
+var usernames = []
+var userRec = []
+
+function getUsernames(){
+  var fetchUsernames = localStorage.getItem('usernames')
+  if (fetchUsernames) {
+    usernames = JSON.parse(fetchUsernames)
+  } else {
+    usernames = localStorage.setItem('usernames', JSON.stringify([]))
+  }
+}
+getUsernames()
+
+function checkUsername() {
+  $('.savedRecipes').empty()
+  var usernameInput = $("#usernameInput").val()
+  var currentUser = null
+  usernames = JSON.parse(localStorage.getItem('usernames'))
+  for (var i = 0; i < usernames.length; i++) {
+    if (usernameInput === usernames[i]) {
+      currentUser = usernames[i]
+    }
+  }
+  if (currentUser) {
+    localStorage.setItem('currentUser', currentUser)
+    var currentUserRecs = JSON.parse(localStorage.getItem(`${currentUser}Recs`))
+    for (var i = 0; i < currentUserRecs.length; i++) {
+      appendNewRec(currentUserRecs[i])
+    }
+
+  } else {
+    localStorage.setItem('currentUser', usernameInput)
+    existingUsernames = JSON.parse(localStorage.getItem('usernames'))
+    existingUsernames.push(usernameInput)
+    localStorage.setItem('usernames', JSON.stringify(existingUsernames))
+    localStorage.setItem(`${usernameInput}Recs`, JSON.stringify([]))
+  }
+}
+
+var savedRecipes = $(".savedRecipes")
+var addButton = $(".addRecipe")
+
+addButton.on("click", createNewRec);
+
+function createNewRec() {
+  var newName = $('#nameInput').val();
+  var newLink = $('#webInput').val();
+  var newIngredients = $('#ingredientsInput').val();
+  var newSteps = $('#stepsInput').val();
+
+  var newRecipe = {
+    newName: newName,
+    newLink: newLink,
+    newIngredients: newIngredients,
+    newSteps: newSteps
+  };
+
+  var currentUser = localStorage.getItem('currentUser')
+  var currentUserRecs = JSON.parse(localStorage.getItem(`${currentUser}Recs`))
+  currentUserRecs.push(newRecipe)
+  stringRecs = JSON.stringify(currentUserRecs)
+  localStorage.setItem(`${currentUser}Recs`, stringRecs)
+
+  userRec.push(newRecipe);
+  appendNewRec(newRecipe);
+  clearInputs();
+}
+
+function appendNewRec(newRecipe) {
+  console.log(newRecipe)
+  savedRecipes.append(`
+    <div class="newRecipeCard">
+    <p>${newRecipe.newName}</p>
+    <p>${newRecipe.newLink}</p>
+    <p>${newRecipe.newIngredients}</p>
+    <p>${newRecipe.newSteps}</p>
+    <button class="deletebtn"> Delete </button>
+    </div>
+    `);
+}
+
+savedRecipes.on("click", ".deletebtn", deleteItem)
 
 var recipes = [
   //eggs-------->
@@ -120,6 +205,7 @@ function deleteItem(event){
 
 function clearInputs(){
   $('#nameInput').val("");
+  $('#webInput').val("");
   $('#ingredientsInput').val("");
   $('#stepsInput').val("");
 }

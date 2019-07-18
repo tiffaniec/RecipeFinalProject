@@ -1,3 +1,4 @@
+<div class="ingredHtml">
 var recipes = [
   //eggs-------->
   {
@@ -116,3 +117,4 @@ function clearInputs() {
 function deleteItem(event){
   event.target.parentNode.remove();
 }
+</div>

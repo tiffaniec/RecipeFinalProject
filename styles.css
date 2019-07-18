@@ -140,3 +140,8 @@ li a:hover:not(.active) {
   padding-left: 20px;
   padding-top: 15px;
 }
+
+.ingredHtml{
+  display: flex;
+  align-items: center;
+}

@@ -18,18 +18,19 @@
 
 <body>
   <div class="login">
-    <h2>Log in to See Your Recipes</h2>
+    <h2 id="login-header">Log in to See Your Recipes</h2>
     <input id="usernameInput" type="text" name="username-input" placeholder="Username">
+    <input id="userSubmit"type="submit" name="userSubmit">
   </div>
   <div class="newRecipes">
     <p>Add New and Tasty Recipes HERE!</p>
     <section class="newRecipe">
-      <input type="text" name="title" placeholder="Name of Dish">
-      <input type="ingredients" name="ingredients" placeholder="Ingredients of Dish">
-      <input type="steps" name="steps" placeholder="Directions for Dish">
+      <input id="nameInput" type="text" name="title" placeholder="Name of Dish">
+      <textarea id="ingredientsInput" name="ingredients" rows="8" cols="80" placeholder="Ingredients of Dish"></textarea>
+      <textarea id="stepsInput" name="steps" rows="11" cols="80" placeholder="Directions to Make the Dish"></textarea>
       <button type="submit" name="addRecipe">Add Recipe</button>
     </section>
-
+    <p class="savedRecipesTitle">Your Saved Recipes</p>
     <div class="savedRecipes"></div>
 
 

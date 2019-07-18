@@ -35,7 +35,7 @@
   width: 300px;
 }
 
-.featured{
+.featured {
   display: flex;
   background-image: url("https://assets.bonappetit.com/photos/5cfa7e1fdf8e95e1e62ca6a3/16:9/w_1280%2Cc_limit/Basically-Strawberry-Shortcake-Strawberries.jpg");
   background-repeat: no-repeat;
@@ -82,13 +82,61 @@
   background-color: #fffff0;
   font-family: 'DM Serif Display', serif;
 }
-li a{
+
+li a {
   display: block;
   color: #666;
   text-align: center;
   padding: 10px 30px;
   text-decoration: none;
 }
+
 li a:hover:not(.active) {
   background-color: #ddd;
+}
+.login{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#login-header{
+  font-size: 20px
+}
+#usernameInput{
+  height:30px;
+  width:200px;
+  margin: 15px;
+}
+#userSubmit{
+ padding: ;
+}
+.newRecipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addIng {
+  float: left;
+}
+
+#nameInput {
+  width: 100%;
+  height: 20px;
+  padding-left: 20px;
+  padding-top: 2px;
+}
+
+#ingredientsInput {
+  width: 100%;
+  height: 60px;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+#stepsInput {
+  width: 100%;
+  height: 100px;
+  padding-left: 20px;
+  padding-top: 15px;
 }

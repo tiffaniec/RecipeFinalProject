@@ -1,30 +1,42 @@
-<<<<<<< HEAD
 .somethinNew{
   display: flex;
-  background-image: url("http://julieskitchen.me/wp-content/uploads/2013/12/25d49a945c4a11e3ad2a120ba9972426_8.jpg");
+  background-image: url("https://static1.squarespace.com/static/55470460e4b0b5d7d7c67dad/557dc078e4b01a4242175316/557dc07ae4b01a4242178ab5/1434306476616/pumpkin_bread_03.jpg?format=750w");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
   width: 100%;
   margin: 0;
+  flex-direction: column;
+}
+
+.somethinNewTitle{
+  text-align: center;
+  color: #ff5405;
 }
 
 .featured{
   display: flex;
-  background-image: url("http://julieskitchen.me/wp-content/uploads/2013/12/25d49a945c4a11e3ad2a120ba9972426_8.jpg");
+  background-image: url("https://assets.bonappetit.com/photos/5cfa7e1fdf8e95e1e62ca6a3/16:9/w_1280%2Cc_limit/Basically-Strawberry-Shortcake-Strawberries.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
   width: 100%;
   margin: 0;
-=======
+  flex-direction: column;
+  text-align: center;
+}
+
 .titleTabs{
   display: flex;
   justify-content: space-around;
 }
+
+.mainTitle{
+  text-align: center;
+}
+
 li {
   list-style-type: none;
   margin: 5px;
   padding: 10px;
->>>>>>> 977b971c1637c8d120476c21e30371620d21b575
 }

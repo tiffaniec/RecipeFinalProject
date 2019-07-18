@@ -1,5 +1,25 @@
-.titleTabs {
-  display:flex;
+
+.somethinNew{
+  display: flex;
+  background-image: url("http://julieskitchen.me/wp-content/uploads/2013/12/25d49a945c4a11e3ad2a120ba9972426_8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  margin: 0;
+}
+
+.featured{
+  display: flex;
+  background-image: url("http://julieskitchen.me/wp-content/uploads/2013/12/25d49a945c4a11e3ad2a120ba9972426_8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  margin: 0;
+}
+.titleTabs{
+  display: flex;
   justify-content: space-around;
   list-style-type: none;
   margin: 0;

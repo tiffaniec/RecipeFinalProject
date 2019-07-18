@@ -35,3 +35,20 @@ function clearInputs(){
   $('#ingredientsInput').val("");
   $('#stepsInput').val("");
 }
+
+// var featButton=$(".featuredBtn")
+//
+// featButton.on("click", featureRecipe);
+//
+// function featureRecipe(){
+//
+// }
+
+
+var randomBtn=$(".newBtn")
+
+randomBtn.on("click", randomRecipe);
+
+function randomRecipe(){
+
+}

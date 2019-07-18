@@ -50,7 +50,7 @@
     linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ),
+      ),
     url("https://assets.bonappetit.com/photos/5cfa7e1fdf8e95e1e62ca6a3/16:9/w_1280%2Cc_limit/Basically-Strawberry-Shortcake-Strawberries.jpg");
 }
 
@@ -139,9 +139,4 @@ li a:hover:not(.active) {
   height: 100px;
   padding-left: 20px;
   padding-top: 15px;
-}
-
-.ingredHtml{
-  display: flex;
-  align-items: center;
 }

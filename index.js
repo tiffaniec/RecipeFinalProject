@@ -1,4 +1,4 @@
-<div class="ingredHtml">
+
 var recipes = [
   //eggs-------->
   {
@@ -117,4 +117,17 @@ function clearInputs() {
 function deleteItem(event){
   event.target.parentNode.remove();
 }
-</div>
+
+function clearInputs(){
+  $('#nameInput').val("");
+  $('#ingredientsInput').val("");
+  $('#stepsInput').val("");
+}
+
+
+var randomBtn=$(".newBtn")
+
+randomBtn.on("click", randomRecipe);
+
+function randomRecipe(){
+}

@@ -1,17 +1,38 @@
+.mainTitle{
+  display: flex;
+  background-color: black;
+  font-family: 'PT Mono', monospace;
+  margin: 0;
+  height: 90px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fffafa;
+  font-size: 50px;
+  text-shadow:rgba(245,245,245,0.5) 3px 5px 1px;
+}
+
 .somethinNew{
   display: flex;
   background-image: url("https://static1.squarespace.com/static/55470460e4b0b5d7d7c67dad/557dc078e4b01a4242175316/557dc07ae4b01a4242178ab5/1434306476616/pumpkin_bread_03.jpg?format=750w");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 550px;
   width: 100%;
   margin: 0;
   flex-direction: column;
+  align-items: center;
 }
 
 .somethinNewTitle{
-  text-align: center;
-  color: #ff5405;
+  color: #fffff0;
+  font-family: 'DM Serif Display', serif;
+  font-size: 60px;
+}
+
+.newBtn{
+  height: 800px;
+  width: 300px;
 }
 
 .featured{
@@ -19,24 +40,55 @@
   background-image: url("https://assets.bonappetit.com/photos/5cfa7e1fdf8e95e1e62ca6a3/16:9/w_1280%2Cc_limit/Basically-Strawberry-Shortcake-Strawberries.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 550px;
   width: 100%;
   margin: 0;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://assets.bonappetit.com/photos/5cfa7e1fdf8e95e1e62ca6a3/16:9/w_1280%2Cc_limit/Basically-Strawberry-Shortcake-Strawberries.jpg");
+}
+
+.featuredBtn{
+  height:100px;
+  width: 300px;
+}
+
+.featuredDescrip{
+  color: #fffff0;
+  font-family: 'DM Serif Display', serif;
+}
+
+.featuredTitle{
+  color: #fffff0;
+  font-family: 'DM Serif Display', serif;
+  font-size: 60px;
+  margin: 0;
 }
 
 .titleTabs{
   display: flex;
   justify-content: space-around;
-}
-
-.mainTitle{
-  text-align: center;
-}
-
-li {
   list-style-type: none;
-  margin: 5px;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #fffff0;
+  font-family: 'DM Serif Display', serif;
+}
+li a{
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #ddd;
 }

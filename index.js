@@ -1,3 +1,4 @@
+
 var recipes = [
   //eggs-------->
   {
@@ -116,6 +117,7 @@ function clearInputs() {
 function deleteItem(event){
   event.target.parentNode.remove();
 }
+
 function clearInputs(){
   $('#nameInput').val("");
   $('#ingredientsInput').val("");

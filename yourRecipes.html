@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Your Recipes</title>
-  </head>
-  <body>
-<nav>
-<li><a href="homePage.html">Home</a></li>
-<li><a href="yourRecipes.html">News</a></li>
-<li><a href="ingredients.html">Contact</a></li>
-<li><a href="aboutUs.html">About</a></li>
-</nav>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Your Recipes</title>
+</head>
+<header>
+  <h1>Recepieeees</h1>
+  <nav class="titleTabs">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="yourRecipes.html">Your Recipes</a></li>
+    <li><a href="ingredients.html">What's in Your Kitchen?</a></li>
+    <li><a href="aboutUs.html">About Us</a></li>
+  </nav>
+</header>
+
+<body>
+  <div class="login">
+    <h2 id="login-header">Log in to See Your Recipes</h2>
+    <input id="usernameInput" type="text" name="username-input" placeholder="Username">
+    <input id="userSubmit"type="submit" name="userSubmit">
+  </div>
+  <div class="newRecipes">
+    <p>Add New and Tasty Recipes HERE!</p>
+    <section class="newRecipe">
+      <input id="nameInput" type="text" name="title" placeholder="Name of Dish">
+      <textarea id="ingredientsInput" name="ingredients" rows="8" cols="80" placeholder="Ingredients of Dish"></textarea>
+      <textarea id="stepsInput" name="steps" rows="11" cols="80" placeholder="Directions to Make the Dish"></textarea>
+      <button type="submit" class="addRecipe">Add Recipe</button>
+    </section>
+    <p class="savedRecipesTitle">Your Saved Recipes</p>
+    <div class="savedRecipes"></div>
 
 
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>

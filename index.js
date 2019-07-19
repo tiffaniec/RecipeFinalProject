@@ -84,6 +84,7 @@ function appendNewRec(newRecipe) {
 
 savedRecipes.on("click", ".deletebtn", deleteItem)
 
+// Ingredients to Recipes finder
 var recipes = [
   //eggs-------->
   {
@@ -210,6 +211,7 @@ function clearInputs(){
   $('#stepsInput').val("");
 }
 
+// Random Recipe Generator
 var randomBtn=$(".newBtn")
 
 randomBtn.on("click", randomRecipe);

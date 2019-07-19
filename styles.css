@@ -213,3 +213,33 @@ li a:hover:not(.active) {
   height: 700px;
   flex-direction: column;
 }
+/* About Us page */
+.picture{
+  display: flex;
+  justify-content: center;
+}
+#pic1{
+width:600px;
+height: 400px;
+object-fit: cover;
+object-position: 100% -20%;
+}
+.indBios{
+  display: flex;
+  justify-content: space-around;
+}
+#Tiffaniebio{
+  text-align: center;
+  width: 30%;
+padding: 20px;
+}
+#Tallulabio{
+  text-align: center;
+width: 30%;
+padding: 20px;
+}
+#Rachelbio{
+  text-align: center;
+width: 30%;
+padding: 20px;
+}

@@ -374,3 +374,35 @@ padding: 20px;
     margin: 40px;
     flex-direction: column;
 }
+
+/* About us */
+
+.aboutTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-image: url("https://assets.bonappetit.com/photos/5d26178d76e20b0008189956/16:9/w_1024,c_limit/HLY-Salad-Ramen-Horizontal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  flex-direction: column;
+  display:flex;
+  color: #fffff0;
+  font-family: 'DM Serif Display', serif;
+  font-size: 60px;
+  margin-top: 0;
+}
+
+.indBios{
+  font-family: 'DM Serif Display', serif;
+}
+
+.titleNameHi{
+  color: #676767;
+  font-size: 25px;
+}
+
+.bioDescrip{
+  color: #808080;
+}

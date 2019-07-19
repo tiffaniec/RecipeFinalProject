@@ -192,7 +192,10 @@ function appendNewRecipe(recipe) {
     cardContainer.append(`
     <div class="to-do-card">
       <h3>${recipe.name}</h3>
-      <a href=${recipe.href} target="_blank">Check Out This Recipe!</a>
+      <a href=${recipe.href} target="_blank" style="font-size: 17px; text-decoration: none; color: #ffdb58;">Check Out This Recipe!</a>
+      <br>
+      <br>
+      <br>
     </div>
   `);
 }

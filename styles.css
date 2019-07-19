@@ -255,8 +255,9 @@ li a:hover:not(.active) {
   text-align: center;
   background-color: white;
   font-family: 'DM Serif Display', serif;
-  font-size: 20px;
-  margin: 40px;
+  font-size: 25px;
+  color: #808080;
+
 }
 
 /* About Us page */
@@ -288,4 +289,89 @@ padding: 20px;
   text-align: center;
 width: 30%;
 padding: 20px;
+}
+
+
+/* //your recipees// */
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  flex-direction: column;
+  margin-bottom: 50px;
+  background-image: url('https://images.101cookbooks.com/madeleinerecipe_07.jpg?w=680&auto=format');
+}
+
+#login-header{
+  color: #fffff0;
+  font-family: 'DM Serif Display', serif;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+#usernameInput{
+  height:25px;
+  width: 250px;
+  border: 20px black;
+  padding: 15px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  font-size: 19px;
+  font-family: 'DM Serif Display', serif;
+}
+
+#userSubmit{
+  height:20px;
+  width: 100px;
+  border: 20px black;
+  padding:0;
+  border-radius: 20px;
+  font-size: 15px;
+  font-family: 'DM Serif Display', serif;
+  background-color: #ffdb58;
+}
+
+.hhhTitle{
+  display:flex;
+  color: #808080;
+  font-family: 'DM Serif Display', serif;
+  font-size: 40px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.addRecipe{
+  height:30px;
+  width: 200px;
+  border: 20px black;
+  padding:0;
+  border-radius: 20px;
+  font-size: 15px;
+  font-family: 'DM Serif Display', serif;
+  background-color: #ffdb58;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.savedRecipesTitle{
+  display:flex;
+  color: #808080;
+  font-family: 'DM Serif Display', serif;
+  font-size: 40px;
+  justify-content: center;
+}
+
+.savedRecipes{
+    display: flex;
+    align-items:flex-start;
+    background-color: white;
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    margin: 40px;
+    flex-direction: column;
 }

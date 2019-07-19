@@ -1,7 +1,10 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #fffdd0;
+  /* background-color: #fffdd0; */
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both;
 }
 
 .mainTitle {
@@ -97,7 +100,7 @@ body {
 }
 
 footer {
-  position: float;
+  position:fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -207,12 +210,55 @@ li a:hover:not(.active) {
   justify-content: center;
   align-items: center;
   align-self: center;
-  background-image: url("http://s3.media.squarespace.com/production/1264487/14880142/wp-content/uploads/2011/02/PRESERVED_LEMONS_W_0001.jpg");
+  background-image: url("https://cdn.loveandlemons.com/wp-content/uploads/2019/06/IMG_18917.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 350px;
   flex-direction: column;
 }
+
+.question {
+  color: #fffff0;
+  font-family: 'DM Serif Display', serif;
+  font-size: 60px;
+}
+
+.user-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newIngredient{
+  height:25px;
+  width: 250px;
+  border: 20px black;
+  padding: 15px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  font-size: 19px;
+  font-family: 'DM Serif Display', serif;
+}
+
+.submit-btn{
+  height:20px;
+  width: 100px;
+  border: 20px black;
+  padding:0;
+  border-radius: 20px;
+  font-size: 15px;
+  font-family: 'DM Serif Display', serif;
+  background-color: #ffdb58;
+}
+
+.card-container{
+  text-align: center;
+  background-color: white;
+  font-family: 'DM Serif Display', serif;
+  font-size: 20px;
+  margin: 40px;
+}
+
 /* About Us page */
 .picture{
   display: flex;
@@ -242,4 +288,3 @@ padding: 20px;
   text-align: center;
 width: 30%;
 padding: 20px;
-}

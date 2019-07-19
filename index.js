@@ -159,9 +159,10 @@ var recipes = [
 var cardContainer = $('.card-container');
 var submit = $('.submit-btn');
 var newIngredient = $('.newIngredient');
+
 submit.on("click", createRecipe);
 
-$('.card-container').on("click", ".delete-btn", deleteItem);
+cardContainer.on("click", ".delete-btn", deleteItem);
 
 function createRecipe() {
   var term = $('.newIngredient').val();

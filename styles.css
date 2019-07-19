@@ -1,9 +1,10 @@
-body{
+body {
   padding: 0;
   margin: 0;
+  background-color: #fffdd0;
 }
 
-.mainTitle{
+.mainTitle {
   display: flex;
   background-color: black;
   font-family: 'PT Mono', monospace;
@@ -14,10 +15,10 @@ body{
   justify-content: center;
   color: #fffafa;
   font-size: 50px;
-  text-shadow:rgba(245,245,245,0.5) 3px 5px 1px;
+  text-shadow: rgba(245, 245, 245, 0.5) 3px 5px 1px;
 }
 
-.somethinNew{
+.somethinNew {
   display: flex;
   background-image: url("https://static1.squarespace.com/static/55470460e4b0b5d7d7c67dad/557dc078e4b01a4242175316/557dc07ae4b01a4242178ab5/1434306476616/pumpkin_bread_03.jpg?format=750w");
   background-repeat: no-repeat;
@@ -29,13 +30,13 @@ body{
   align-items: center;
 }
 
-.somethinNewTitle{
+.somethinNewTitle {
   color: #fffff0;
   font-family: 'DM Serif Display', serif;
   font-size: 60px;
 }
 
-.newBtn{
+.newBtn {
   height: 50px;
   width: 250px;
   border: 1px black;
@@ -44,7 +45,7 @@ body{
   font-family: 'DM Serif Display', serif;
 }
 
-.featured{
+.featured {
   display: flex;
   background-image: url("https://assets.bonappetit.com/photos/5cfa7e1fdf8e95e1e62ca6a3/16:9/w_1280%2Cc_limit/Basically-Strawberry-Shortcake-Strawberries.jpg");
   background-repeat: no-repeat;
@@ -56,14 +57,12 @@ body{
   align-items: center;
   justify-content: center;
   background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-      ),
+    linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),
     url("https://assets.bonappetit.com/photos/5cfa7e1fdf8e95e1e62ca6a3/16:9/w_1280%2Cc_limit/Basically-Strawberry-Shortcake-Strawberries.jpg");
 }
 
-.featuredBtn{
+.featuredBtn {
   height: 50px;
   width: 250px;
   margin-bottom: 100px;
@@ -73,14 +72,14 @@ body{
   font-family: 'DM Serif Display', serif;
 }
 
-.featuredRec{
+.featuredRec {
   color: #fffff0;
   font-family: 'DM Serif Display', serif;
   font-size: 30px;
   text-decoration: underline;
 }
 
-.featuredDes{
+.featuredDes {
   color: #fffff0;
   font-family: 'DM Serif Display', serif;
   width: 500px;
@@ -89,7 +88,7 @@ body{
   margin-bottom: 50px;
 }
 
-.featuredTitle{
+.featuredTitle {
   color: #fffff0;
   font-family: 'DM Serif Display', serif;
   font-size: 60px;
@@ -97,11 +96,12 @@ body{
   margin-bottom: 20px;
 }
 
-footer{
-  position: fixed;
+footer {
+  position: float;
   left: 0;
   bottom: 0;
   width: 100%;
+  list-style-type: none;
   display: flex;
   height: 50px;
   text-align: left;
@@ -110,16 +110,16 @@ footer{
   font-family: 'DM Serif Display', serif;
 }
 
-.foot{
+.foot {
   display: flex;
-  color:#666;
+  color: #666;
   text-decoration: none;
   padding: 10px 30px;
   margin-top: 10px;
   align-items: center;
 }
 
-.titleTabs{
+.titleTabs {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
@@ -142,22 +142,27 @@ li a {
 li a:hover:not(.active) {
   background-color: #ddd;
 }
-.login{
-  display:flex;
+
+.login {
+  display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-#login-header{
+
+#login-header {
   font-size: 20px
 }
-#usernameInput{
-  height:30px;
-  width:200px;
+
+#usernameInput {
+  height: 30px;
+  width: 200px;
   margin: 15px;
 }
-#userSubmit{
- padding: ;
+
+#userSubmit {
+  padding: ;
 }
+
 .newRecipe {
   display: flex;
   flex-direction: column;
@@ -174,6 +179,7 @@ li a:hover:not(.active) {
   padding-left: 20px;
   padding-top: 2px;
 }
+
 #webInput {
   width: 100%;
   height: 30px;
@@ -196,9 +202,8 @@ li a:hover:not(.active) {
 }
 
 /* Rachel's CSS */
-
-.original{
-  display:flex;
+.original {
+  display: flex;
   justify-content: center;
   align-items: center;
   align-self: center;

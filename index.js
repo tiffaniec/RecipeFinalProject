@@ -89,7 +89,7 @@ var recipes = [
   //eggs-------->
   {
     term: 'eggs',
-    name: 'Perfect Omlette',
+    name: 'The Perfect Omlette',
     href: "https://www.delish.com/cooking/recipe-ideas/a24892843/how-to-make-omelet"
   },
   {
@@ -192,7 +192,7 @@ function appendNewRecipe(recipe) {
     cardContainer.append(`
     <div class="to-do-card">
       <h3>${recipe.name}</h3>
-      <a href=${recipe.href} target="_blank">Recipe Link!</a>
+      <a href=${recipe.href} target="_blank">Check Out This Recipe!</a>
     </div>
   `);
 }

@@ -167,7 +167,7 @@ cardContainer.on("click", ".delete-btn", deleteItem);
 function createRecipe() {
   var term = $('.newIngredient').val();
   var matchingRecipes = []
-
+  cardContainer.empty();
   for (var i = 0; i < recipes.length; i++) {
     var recipe = recipes[i]
     if (recipe.term === term){
@@ -199,6 +199,7 @@ function appendNewRecipe(recipe) {
 
 function clearInputs() {
   $('.newIngredient').val("");
+
 }
 
 function deleteItem(event){
